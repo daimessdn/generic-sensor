@@ -13,7 +13,7 @@
         background-color: #109043;
         width: 70px;
         height: 70px;
-        transform: rotateX(0), rotateY(0), rotateZ(0);
+        transform: rotateX(2deg) rotateY(5deg) rotateZ(100deg);
         position: absolute;
         bottom: 8px;
         left: 8px;
@@ -38,8 +38,8 @@
         output.innerHTML += "beta : " + y + "\n";
         output.innerHTML += "gamma: " + z + "\n";
 
-        rect.style.transform = `rotateX(${x}deg),
-                                rotateY(${y}deg),
+        rect.style.transform = `rotateX(${x}deg)
+                                rotateY(${y}deg)
                                 rotateZ(${z}deg)`;
       }
 

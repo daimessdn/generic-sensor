@@ -12,9 +12,8 @@
       }
 
       .rectangle {
-        background-color: #109043;
-        width: 70px;
-        height: 70px;
+        width: 150px;
+        height: 150px;
         transform: rotateX(0) rotateY(0) rotateZ(0);
         position: absolute;
         bottom: 8px;
@@ -25,7 +24,7 @@
   <body>
     <div class="output"></div>
 
-    <div class="rectangle"></div>
+    <img class="rectangle" src="2163338.png" />
   
     <script>
       var output = document.querySelector('.output');
@@ -36,9 +35,9 @@
         var y = (event.beta).toFixed(2);
         var z = (event.gamma).toFixed(2);
 
-        output.innerHTML  = "alpha: " + x + "\n";
-        output.innerHTML += "beta : " + y + "\n";
-        output.innerHTML += "gamma: " + z + "\n";
+        output.innerHTML  = "alpha: " + x + "<br />";
+        output.innerHTML += "beta : " + y + "<br />";
+        output.innerHTML += "gamma: " + z + "<br />";
 
         rect.style.transform = `rotateX(${x}deg) rotateY(${y}deg) rotateZ(${z}deg)`;
       }

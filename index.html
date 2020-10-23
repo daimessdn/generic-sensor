@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style type="text/css">
       .output {
         font-family: Helvetica, sans-serif;
@@ -37,9 +38,9 @@
         output.innerHTML += "beta : " + y + "\n";
         output.innerHTML += "gamma: " + z + "\n";
 
-        rect.style.transform = `rotateX(${x}),
-                                rotateY(${y}),
-                                rotateZ(${z})`;
+        rect.style.transform = `rotateX(${x}deg),
+                                rotateY(${y}deg),
+                                rotateZ(${z}deg)`;
       }
 
       window.addEventListener('deviceorientation', handleOrientation);

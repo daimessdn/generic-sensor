@@ -6,14 +6,16 @@
     <style type="text/css">
       .output {
         font-family: Helvetica, sans-serif;
-        float: right;
+        position: absolute;
+        top: 8px;
+        right: 8px;
       }
 
       .rectangle {
         background-color: #109043;
         width: 70px;
         height: 70px;
-        transform: rotateX(2deg) rotateY(5deg) rotateZ(100deg);
+        transform: rotateX(0) rotateY(0) rotateZ(0);
         position: absolute;
         bottom: 8px;
         left: 8px;
@@ -38,9 +40,7 @@
         output.innerHTML += "beta : " + y + "\n";
         output.innerHTML += "gamma: " + z + "\n";
 
-        rect.style.transform = `rotateX(${x}deg)
-                                rotateY(${y}deg)
-                                rotateZ(${z}deg)`;
+        rect.style.transform = `rotateX(${x}deg) rotateY(${y}deg) rotateZ(${z}deg)`;
       }
 
       window.addEventListener('deviceorientation', handleOrientation);
